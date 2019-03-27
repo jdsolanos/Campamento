@@ -1,20 +1,65 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>troncales</title>
-</head>
-<body>
-	<center>
-		<nav>
-		<a href="../index.html" title="home">|HOME|</a>
-		<a href="troncales.html" title="troncales" >|TRONCALES|</a>
-		<a href="nosotros.html" title="nosotros">|NOSOTROS|</a>
-		<a href="contacto.html" title="contacto">|CONTACTO|</a>
-		</nav>
-		<img src="http://contacto.imes3d.net/contenido/uploads/2015/09/En-construccion.png" width="20%"><br>
-		<label>En construcción</label>
-	</center>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Troncal</title>
+
+<!--
+	1 ) Reference to the files containing the JavaScript and CSS.
+	These files must be located on your server.
+-->
+
+<script type="text/javascript" src="../scripts/highslide-full.js"></script>
+<link rel="stylesheet" type="text/css" href="../styles/highslide.css" />
+
+<!--
+	2) Optionally override the settings defined at the top
+	of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+
+<script type="text/javascript">
+	hs.graphicsDir = '../graphics/';
+	hs.outlineType = 'rounded-white';
+	hs.fadeInOut = true;
+	hs.headingEval = 'this.a.title';
+	//hs.dimmingOpacity = 0.75;
+</script>
+
+</head>
+
+<body>
+		<nav>
+				<a href="../index.html" title="home">|HOME|</a>
+				<a href="../paginas/troncales.html" title="troncales" >|TRONCALES|</a>
+				<a href="../paginas/nosotros.html" title="nosotros">|NOSOTROS|</a>
+				<a href="../paginas/contacto.html" title="contacto">|CONTACTO|</a>
+			</nav><br><br>
+<div>
+	<h1>Mapa Interactivo</h1>
+</div>
+<div>
+
+<!--
+	3) Add onclick attributes to the area tags like below.
+-->
+
+<img src="../images/rutas.jpg" alt="" usemap="#imgmap1" style="border: none" width="790px"/>
+<map id="imgmap1" name="imgmap1">
+	<area shape="poly" alt="Norte" title="Norte" coords="16,102,287,100,287,134,255,133,244,121,238,121,238,137,19,138" href="../images/Norte.png" onclick="return hs.expand(this)" />
+	<area shape="rect" alt="20 de Julio" title="20 de Julio" coords="475,59,737,81" href="../images/20 de julio.png" onclick="return hs.expand(this)" />
+	<area shape="rect" alt="Caracas" title="Caracas" coords="550,134,291,120" href="../images/Caracas.png" onclick="return hs.expand(this)" />
+	<area shape="rect" alt="Museo Nacional" title="Museo Nacional" coords="162,60,464,80" href="../images/M.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="El Dorado" title="El Dorado" coords="399,292,397,469,416,471,416,299,479,214,481,11,467,9,464,206" href="../images/El dorado.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="NQS Central" title="NQS Central" coords="253,166,292,201,543,202,543,70,557,68,557,219,291,219,242,174,243,135,230,134,236,123,254,125" href="../images/kra30.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Usme" title="Usme" coords="558,115,556,132,610,135,717,237,719,267,738,268,734,232,712,210,770,209,767,193,692,190,619,118" href="../images/usme.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Calle 80" title="Calle 80" coords="205,385,189,384,189,288,298,178,300,137,314,137,312,184,280,219,296,225,290,232,268,232,206,292" href="../images/80.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Suba" title="Suba" coords="125,326,109,327,110,244,157,201,267,202,255,216,158,219,124,251" href="../images/Suba.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Américas" title="Américas" coords="512,136,522,136,524,284,587,349,589,392,629,393,630,408,580,409,574,357,512,295" href="../images/americas.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Aguas" title="Aguas" coords="481,24,479,9,523,51,524,113,510,115,507,53" href="../images/aguas.png" onclick="return hs.expand(this)" />
+	<area shape="poly" alt="Sur" title="Sur" coords="715,445,725,427,652,353,644,255,589,206,558,204,559,218,587,217,633,264,634,359" href="../images/sur.png" onclick="return hs.expand(this)" />
+</map>
+</div>
 </body>
 </html>
