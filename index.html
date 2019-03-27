@@ -5,6 +5,21 @@
     <title>Informilenio</title>
     <link href="css.css" rel="stylesheet" type="text/css">
     <link href="styles/style1.css" rel="stylesheet" type="text/css">
+    <!-- slider noticias -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				touch: true,
+				pauseOnAction: false,
+				pauseOnHover: false,
+			});
+		});
+    </script>
+    <!-- fin slider noticias -->
 </head>
 <body>
     <div class="cabecera">
@@ -13,7 +28,7 @@
         </div>
         <h4>Mejora tu viaje</h4>
     </div>
-    <link rel="stylesheet" href="styles/style.css">
+    
 	<center>  
         <h1 style="color: red">InfoMilenio</h1>
         <nav>
@@ -23,14 +38,30 @@
                 <a href="paginas/contacto.html" title="contacto">|CONTACTO|</a>
             </nav><br><br>    
     
-    <div class="slider">
-        <ul>
-            <li><a href="https://bit.ly/2HItHnp" target="_blank"><img src="images/trasmi1.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2GlZjOn" target="_blank"><img src="images/trasmi2.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2uu6exL" target="_blank"><img src="images/trasmi3.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2UbYL4S" target="_blank"><img src="images/trasmi4.png" alt="imagen de noticia"></a> </li>
+    <!-- div slider noticias -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <a href="https://bit.ly/2CFuhOF" target="_blank"><img src="images/1.jpg" alt=""></a>
+                <section class="flex-caption">
+                <p>Se extenderá en una hora el servicio - TransMilenio participa en "Bogotá despierta"</p>	
+                </section>
+            </li>
+            <li>
+                <a href="https://bit.ly/2VIyiJv" target="_blank"><img src="images/2.jpeg" alt=""></a>
+                <section class="flex-caption">
+                    <p>Según estudio, TransMilenio genera altos niveles de contaminación</p>
+                </section>
+            </li>
+            <li>
+                <a href="https://bit.ly/2F3dh5u" target="_blank"><img src="images/3.jpeg" alt=""></a>
+                <section class="flex-caption">
+                <p>Envases por pasajes en TransMilenio, nueva campaña ecológica</p>	
+                </section>
+            </li>
         </ul>
-    </div><br><br>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- fin div noticias -->
     <div class="slider1">
             <ul>
                 <li><a href="https://www.transmilenio.gov.co/" target="_blank"><img src="https://static.iris.net.co/dinero/upload/images/2017/8/17/248857_1.jpg" alt="imagen de noticia"></a> </li>
