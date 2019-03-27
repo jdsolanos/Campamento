@@ -10,7 +10,7 @@
 	1 ) Reference to the files containing the JavaScript and CSS.
 	These files must be located on your server.
 -->
-
+<script type="text/javascript" src="../js/mapa.js"></script>
 <script type="text/javascript" src="../scripts/highslide-full.js"></script>
 <link rel="stylesheet" type="text/css" href="../styles/highslide.css" />
 
@@ -21,6 +21,7 @@
 
 <script type="text/javascript">
 	hs.graphicsDir = '../graphics/';
+	hs.transitions = ['expand','crossfade']
 	hs.outlineType = 'rounded-white';
 	hs.fadeInOut = true;
 	hs.headingEval = 'this.a.title';
@@ -29,7 +30,7 @@
 <link href="../css.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onclick="hs.close(all)">
 		<div class="cabecera">
 				<div>
 					<img id="logor"  src="../images/logo1.jpg" alt="Informilenio" width="150" height="150">
@@ -51,7 +52,7 @@
 
 <img src="../images/rutas.jpg" alt="" usemap="#imgmap1" style="border: none" width="790px"/>
 <map id="imgmap1" name="imgmap1">
-	<area shape="poly" alt="Norte" title="Norte" coords="16,102,287,100,287,134,255,133,244,121,238,121,238,137,19,138" href="../images/Norte.png" onclick="return hs.expand(this)" />
+	<area class="highslide" shape="poly" alt="Norte" title="Norte" coords="16,102,287,100,287,134,255,133,244,121,238,121,238,137,19,138" href="../images/Norte.png" onclick="return hs.expand(this)" />
 	<area shape="rect" alt="20 de Julio" title="20 de Julio" coords="475,59,737,81" href="../images/20 de julio.png" onclick="return hs.expand(this)" />
 	<area shape="rect" alt="Caracas" title="Caracas" coords="550,134,291,120" href="../images/Caracas.png" onclick="return hs.expand(this)" />
 	<area shape="rect" alt="Museo Nacional" title="Museo Nacional" coords="162,60,464,80" href="../images/M.png" onclick="return hs.expand(this)" />
