@@ -7,10 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 
     <link rel="stylesheet" href="css/nivo-slider.css">
-	<link rel="stylesheet" href="css/mi-slider.css">
+    <link rel="stylesheet" href="css/mi-slider.css">
+    <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 	<script src="js/jquery.nivo.slider.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				touch: true,
+				pauseOnAction: false,
+				pauseOnHover: false,
+			});
+		});
+	</script>
 
     <script type="text/javascript"> 
 		$(window).on('load', function() {
@@ -44,15 +56,28 @@
     <div w3-include-html="encabezado.html"></div>
     <script>w3.includeHTML();</script>
     -->
-    <div class="slider">
-        <ul>
-            <li><a href="https://bit.ly/2HItHnp" target="_blank"><img src="images/trasmi1.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2GlZjOn" target="_blank"><img src="images/trasmi2.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2uu6exL" target="_blank"><img src="images/trasmi3.png" alt="imagen de noticia"></a> </li>
-            <li><a href="https://bit.ly/2UbYL4S" target="_blank"><img src="images/trasmi4.png" alt="imagen de noticia"></a> </li>
-        </ul>
-    </div><br><br>
-
+    <div class="flexslider">
+			<ul class="slides">
+				<li>
+					<a href="https://bit.ly/2CFuhOF"><img src="images/1.jpg" alt=""></a>
+					<section class="flex-caption">
+					<p>Se extenderá en una hora el servicio - TransMilenio participa en "Bogotá despierta"</p>	
+					</section>
+				</li>
+				<li>
+					<a href="https://bit.ly/2VIyiJv"><img src="images/2.jpeg" alt=""></a>
+					<section class="flex-caption">
+						<p>Según estudio, TransMilenio genera altos niveles de contaminación</p>
+					</section>
+				</li>
+				<li>
+					<a href="https://bit.ly/2F3dh5u"><img src="images/3.jpeg" alt=""></a>
+					<section class="flex-caption">
+					<p>Envases por pasajes en TransMilenio, nueva campaña ecológica</p>	
+					</section>
+				</li>
+			</ul>
+		</div>
     <div class="slider-wrapper theme-mi-slider">
         <div id="slider" class="nivoSlider">     
             <a href="https://moovitapp.com/" target="_blank"><img src="images/bannerMoovit.png"/></a>    
