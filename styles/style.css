@@ -1,3 +1,7 @@
+body {
+    background: url(../images/fondo.PNG);
+    font-family: 'Baloo Chettan', cursive;
+}
 .slider {
     width: 45%;
     margin: auto;
@@ -28,4 +32,17 @@
     70% { margin-left: -200%;}
     75% { margin-left: -300%;}
     100% { margin-left: -300%;}
+}
+
+.cabecera{
+    width: 880px;
+    height: 150px;
+}
+
+.logo{
+    float: left;
+    width: 110px;
+    height: 110px;
+    background: url(../images/logo1.png);
+    margin: 20px 0px 0px 20px;
 }
