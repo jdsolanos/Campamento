@@ -46,3 +46,6 @@ body {
     background: url(../images/logo1.png);
     margin: 20px 0px 0px 20px;
 }
+h1 {
+    font-size: 50px;
+}
