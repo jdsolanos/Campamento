@@ -7,10 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 
     <link rel="stylesheet" href="css/nivo-slider.css">
-	<link rel="stylesheet" href="css/mi-slider.css">
+    <link rel="stylesheet" href="css/mi-slider.css">
+    <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 	<script src="js/jquery.nivo.slider.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				touch: true,
+				pauseOnAction: false,
+				pauseOnHover: false,
+			});
+		});
+	</script>
 
     <script type="text/javascript"> 
 		$(window).on('load', function() {
@@ -21,14 +33,15 @@
 <body>
     <div class="cabecera">
         <div>
-
-            <img id="logor"  src="images/logo1.png" alt="Informilenio" width="150" height="150">
+            <img id="logo"  src="images/logo1.png" alt="Informilenio" width="150" height="150">
         </div>
-        <h4>Mejora tu viaje</h4>
+        <div class="nombre">
+            <h1 style="color: red">InfoMilenio</h1>
+            <h4>Mejora tu viaje</h4>
+        </div>
     </div>
-    
+    <link rel="stylesheet" href="styles/style.css">
 	<center>  
-        <h1 style="color: red">InfoMilenio</h1>
         <nav>
                 <a href="index.html" title="home">|INICIO|</a>
                 <a href="paginas/troncales.html" title="troncales" >|TRONCALES|</a>
@@ -39,43 +52,46 @@
 
     
     
-    <!-- div slider noticias -->
+    <!--<center>
+    <div w3-include-html="encabezado.html"></div>
+    <script>w3.includeHTML();</script>
+    -->
     <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <a href="https://bit.ly/2CFuhOF" target="_blank"><img src="images/1.jpg" alt=""></a>
-                <section class="flex-caption">
-                <p>Se extenderá en una hora el servicio - TransMilenio participa en "Bogotá despierta"</p>	
-                </section>
-            </li>
-            <li>
-                <a href="https://bit.ly/2VIyiJv" target="_blank"><img src="images/2.jpeg" alt=""></a>
-                <section class="flex-caption">
-                    <p>Según estudio, TransMilenio genera altos niveles de contaminación</p>
-                </section>
-            </li>
-            <li>
-                <a href="https://bit.ly/2F3dh5u" target="_blank"><img src="images/3.jpeg" alt=""></a>
-                <section class="flex-caption">
-                <p>Envases por pasajes en TransMilenio, nueva campaña ecológica</p>	
-                </section>
-            </li>
-        </ul>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- fin div noticias -->
-    <div class="slider1">
-            <ul>
-                <li><a href="https://www.transmilenio.gov.co/" target="_blank"><img src="https://static.iris.net.co/dinero/upload/images/2017/8/17/248857_1.jpg" alt="imagen de noticia"></a> </li>
-                <li><a href="https://moovitapp.com/" target="_blank"><img src="images/moovit.jpg" alt="imagen de noticia"></a> </li>
-                <li><a href="https://www.mintransporte.gov.co/" target="_blank"><img src="https://revistazonalibre.com/images/noticias/2018FEBRERO/9ministeriodetransporte.jpg" alt="imagen de noticia"></a> </li>
-            </ul>
-        </div><br><br>
-    
+			<ul class="slides">
+				<li>
+					<a href="https://bit.ly/2CFuhOF"><img src="images/1.jpg" alt=""></a>
+					<section class="flex-caption">
+					<p>Se extenderá en una hora el servicio - TransMilenio participa en "Bogotá despierta"</p>	
+					</section>
+				</li>
+				<li>
+					<a href="https://bit.ly/2VIyiJv"><img src="images/2.jpeg" alt=""></a>
+					<section class="flex-caption">
+						<p>Según estudio, TransMilenio genera altos niveles de contaminación</p>
+					</section>
+				</li>
+				<li>
+					<a href="https://bit.ly/2F3dh5u"><img src="images/3.jpeg" alt=""></a>
+					<section class="flex-caption">
+					<p>Envases por pasajes en TransMilenio, nueva campaña ecológica</p>	
+					</section>
+				</li>
+			</ul>
+		</div>
+    <div class="slider-wrapper theme-mi-slider">
+        <div id="slider" class="nivoSlider">     
+            <a href="https://moovitapp.com/" target="_blank"><img src="images/bannerMoovit.png"/></a>    
+            <a href="https://www.transmilenio.gov.co/" target="_blank"><img src="images/bannerTransmilenio.png"/></a>    
+            <a href="https://www.sitp.gov.co/Publicaciones/TransMilenio" target="_blank"><img src="images/bannerTransmiSitp.png"/></a>
+            <a href="https://www.mintransporte.gov.co/" target="_blank"><img src="images/bannerMinisterioT.png"/></a>     
+        </div> 
+    </div>    
+
     <footer style="background-color: gray; ">
         <div>
         <nav>
-        <label style="color: white"><a href="" style="color: white" title="Mapa del Sitio">Mapa del Sitio  ||  </a></label>
-        <label style="color: white"><a href="../Campamento-1/paginas/contacto.html" style="color: white" title="Contáctenos">Contáctenos</a></label><br><br>
+        <label style="color: white"><a href="documentacion/map1.html" style="color: white" title="Mapa del Sitio">Mapa del Sitio  ||  </a></label>
+        <label style="color: white"><a href="" style="color: white" title="Contáctenos">Contáctenos</a></label><br><br>
         </div>
         </nav>	
         <label style="color: white;">Datos de Contacto</label><br><br>
@@ -89,6 +105,6 @@
         <label style="color: white">Campamento Colnodo - 2019</label><br>
         </footer>  
 	</center>
-
+    <div></div>
 </body>
 </html>
