@@ -26,10 +26,10 @@ body{
     color: white;
     text-decoration: none;
 }
-.map li{
+.map1 ul{
     list-style-type: none;
 }
-.map li a{
+.map1 li a{
     border-bottom: 5x solid white;/*Le da un espacio entre cada item con un borde*/
     padding: 20px 20px;
     color: black;
